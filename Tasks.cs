@@ -1,9 +1,12 @@
-﻿using System;
+using System;
 public class Tasks
 {
     public int SumLastNums(int x)
     {
-        if (x < 0) x = -x;
+        if (x < 0)
+        {
+            x = -x;
+        }
         int e = x % 10;   
         int w = (x % 100) / 10; 
         return e + w;
@@ -24,15 +27,25 @@ public class Tasks
     
     public bool IsDivisor(int a, int b) 
     {
-        if (a == 0 || b == 0) return false;
+        if (a == 0 || b == 0)
+        {
+            return false;
+        }
         return (a % b == 0 || b % a == 0) ? true : false;
     }
 
     
     public int LastNumSum(int a, int b)
     {
-        if (a < 0) a = -a;
-        if (b < 0) b = -b;
+        if (a < 0)
+        {
+            a = -a;
+        }
+
+        if (b < 0)
+        {
+            b = -b;
+        }
         return (a % 10) + (b % 10);
     }
 
@@ -40,7 +53,10 @@ public class Tasks
     public double SafeDiv(int x, int y)
     {
 
-        if (y == 0) return 0;
+        if (y == 0)
+        {
+            return 0;
+        }
         return (double)x / y;
     }
     
@@ -144,7 +160,10 @@ public class Tasks
         x = x / 10;
         while (x > 0)
         {
-            if (x % 10 != last) return false;
+            if (x % 10 != last)
+            {
+                return false;
+            }
             x = x / 10;
         }
         return true;
@@ -203,7 +222,10 @@ public class Tasks
     {
         for (int i = arr.Length - 1; i >= 0; i--)
         {
-            if (arr[i] == x) return i;
+            if (arr[i] == x)
+            {
+                return i;
+            }
         }
         return -1;
     }
