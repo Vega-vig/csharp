@@ -6,8 +6,8 @@ internal class Program
     public static void Main(string[] args)
     {
         Tasks program = new Tasks();
-
-
+        
+        
         Console.WriteLine("Задача 1. Сумма знаков");
         Console.WriteLine("Введите как минимум двузначное число (пример 12, -134, 78564):");
         int x1,answ1;
@@ -281,7 +281,7 @@ internal class Program
        
     }
 
-    public static int[] ReadArray()
+    private static int[] ReadArray()
     {
         int n;
         Console.WriteLine("Введите количество элементов массива (от 1 до 100):");
@@ -302,7 +302,7 @@ internal class Program
     }
 
 
-    public static void PrintArray(int[] arr)
+    private static void PrintArray(int[] arr)
     {
         Console.Write("[");
         for (int i = 0; i < arr.Length; i++)
